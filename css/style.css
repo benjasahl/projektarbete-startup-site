@@ -114,12 +114,21 @@ body {
 }
 
 .service-card {
+  justify-content: center;
   border: 3px solid black;
   margin: 20px;
   width: 200px;
-  height: 250px;
+  height: 300px;
   padding: 20px;
   border-radius: 10px;
+}
+
+.service-card img {
+  width: 60px;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
 }
 
 #service-h1 {
@@ -154,7 +163,7 @@ body {
 
 .about-us-image {
   width: 50%;
-  margin: 20px ;
+  margin: 20px;
   border: solid rgb(72, 4, 128);
   border-radius: 5px;
 }
