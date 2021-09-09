@@ -10,17 +10,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+
   width: 95%;
   padding: 2.5%;
   height: 40px;
   z-index: 1;
 }
 
+.sticky-navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+
+.sticky-navbar i {
+  margin-top: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.sticky-navbar:hover a {
+  display: block;
+}
+
+.sticky-navbar a {
+  display: none;
+}
+
 .link-wrapper a {
   text-decoration: none;
   color: black;
-  margin: 0 10px;
+  padding: 10px;
 }
 
 .link-wrapper a:hover {
@@ -72,6 +96,12 @@ body {
   color: white;
   font-weight: bold;
   border-radius: 15px;
+  transition: 0.5s;
+}
+
+#services-section {
+  width: 100%;
+  height: auto;
 }
 
 #service-card-section {
@@ -93,7 +123,6 @@ body {
 }
 
 #service-h1 {
-  padding-top: 120px;
   text-align: center;
   font-size: 50px;
 }
@@ -112,9 +141,9 @@ body {
 }
 
 #about-container h2 {
-  padding-top: 120px;
   text-align: center;
   font-size: 50px;
+  padding-top: 50px;
 }
 
 .social-icons-wrapper {
