@@ -198,3 +198,93 @@ body {
   transition: 0.5s;
   box-shadow: inset 200px 0 0 0 #fff;
 }
+
+.footer-container {
+  display: block; 
+}
+
+.footer {
+  padding-top: 80px;
+  padding-right: 0px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+
+  background: darkslategray;
+
+  display: block;
+}
+
+.footer-nav {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  width: 100%;
+}
+
+.footer-logo {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+
+  width: 16%;
+  display: block;
+  box-sizing: border-box;
+
+}
+
+.footer-links-container {
+  width: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+
+  flex-direction: row;
+  display: flex;
+}
+
+.footer-links-style {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+
+  margin: 0;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0%;
+}
+
+dl.footer-links-style {
+  padding-top: 0px;
+  padding-right: 15px;
+  padding-bottom: 0px;
+  padding-left: 15px;
+
+  margin: 0;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0%;
+}
+
+dl {
+  display: block;
+  margin-block-start:1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+dt.footer-links-style {
+  margin-top: 20px;
+  margin-right: 0px;
+  margin-bottom: 20px;
+  margin-left: 0px;
+}
+
+dt {
+  display: block;
+}
