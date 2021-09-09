@@ -10,17 +10,41 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+
   width: 95%;
   padding: 2.5%;
   height: 40px;
   z-index: 1;
 }
 
+.sticky-navbar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  padding: 10px;
+  background-color: transparent;
+  text-decoration: none;
+  color: black;
+}
+
+.sticky-navbar i {
+  margin-top: 2px;
+  text-decoration: none;
+  color: black;
+}
+
+.sticky-navbar:hover a {
+  display: block;
+}
+
+.sticky-navbar a {
+  display: none;
+}
+
 .link-wrapper a {
   text-decoration: none;
   color: black;
-  margin: 0 10px;
+  padding: 10px;
 }
 
 .link-wrapper a:hover {
@@ -72,6 +96,12 @@ body {
   color: white;
   font-weight: bold;
   border-radius: 15px;
+  transition: 0.5s;
+}
+
+#services-section {
+  width: 100%;
+  height: auto;
 }
 
 #service-card-section {
@@ -84,16 +114,24 @@ body {
 }
 
 .service-card {
+  justify-content: center;
   border: 3px solid black;
   margin: 20px;
   width: 200px;
-  height: 250px;
+  height: 300px;
   padding: 20px;
   border-radius: 10px;
 }
 
+.service-card img {
+  width: 60px;
+}
+
+.service-card:hover {
+  transform: scale(1.1);
+}
+
 #service-h1 {
-  padding-top: 120px;
   text-align: center;
   font-size: 50px;
 }
@@ -112,9 +150,9 @@ body {
 }
 
 #about-container h2 {
-  padding-top: 120px;
   text-align: center;
   font-size: 50px;
+  padding-top: 50px;
 }
 
 .social-icons-wrapper {
@@ -125,14 +163,40 @@ body {
 
 .about-us-image {
   width: 50%;
-  padding: 20px;
+  margin: 20px;
+  border: solid rgb(72, 4, 128);
+  border-radius: 5px;
 }
 
 #about-paragraph {
   width: 50%;
   border: 3px solid black;
+  border-radius: 5px;
   margin: 20px;
   padding: 20px;
+  margin: 20px;
+  font-size: 25px;
+}
+
+.button {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(72, 4, 128);
+  color: white;
+  padding: 20px 25px;
+  margin: 30px;
+  display: block;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  font-size: 18px;
+  box-shadow: inset 0 0 0 0 #fff;
+  width: fit-content;
+}
+
+.button:hover {
+  color: black;
+  transition: 0.5s;
+  box-shadow: inset 200px 0 0 0 #fff;
 }
 
 .footer-container {
